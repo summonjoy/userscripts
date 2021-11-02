@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         mtlnovel controls
 // @namespace    summonjoy.github.io
-// @version      0.1
+// @version      0.1.1
 // @description  set of keyboard shortcut to perform required tasks
 // @author       summonjoy
 // @match        https://www.mtlnovel.com/*
@@ -31,7 +31,7 @@
 
     function copyToClipboard () {
       let chapter = ''
-      const contents = document.querySelectorAll('p.en')
+      const contents = document.querySelectorAll('.par p')
       contents.forEach((content) => {
         chapter += content.textContent
       })
